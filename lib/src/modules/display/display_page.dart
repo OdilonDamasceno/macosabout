@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:macosabout/src/modules/display/display_controller.dart';
 import 'package:macosabout/src/modules/widgets/button_mac.dart';
 
 class DisplayPage extends StatelessWidget {
+  final DisplayController _controller = DisplayController.init();
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -20,12 +22,12 @@ class DisplayPage extends StatelessWidget {
             ),
             SizedBox(height: 5),
             Text(
-              "20,5-inch (1280 x 720)",
+              "${_controller.iches}-inch (${_controller.resolution})",
               style: TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
             ),
             SizedBox(height: 5),
             Text(
-              "Display 3MB",
+              _controller.gpu,
               style: TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
             ),
           ],
@@ -35,7 +37,9 @@ class DisplayPage extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomRight,
             child: SizedBox(
-                width: 150, child: ButtonMac("Display Preferences...")),
+              width: 150,
+              child: ButtonMac("Display Preferences..."),
+            ),
           ),
         ),
       ],
