@@ -3,4 +3,4 @@ run:
 	flutter build linux --release
 install:
 	cp -r ./build/linux/release/bundle/ /opt/macosabout/
-	ln -s /opt/macosabout/macosabout /usr/bin/macosabout
+	ln -sf /opt/macosabout/macosabout /usr/bin/macosabout
