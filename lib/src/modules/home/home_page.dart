@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:macosabout/src/modules/display/display_page.dart';
 import 'package:macosabout/src/modules/home/home_controller.dart';
 import 'package:macosabout/src/modules/overview/overview_page.dart';
+import 'package:macosabout/src/modules/storage/storage_page.dart';
 import 'package:macosabout/src/modules/widgets/button_mac.dart';
 import 'package:desktop_window/desktop_window.dart';
 
@@ -86,7 +87,10 @@ class _HomePageState extends State<HomePage> {
             height: height,
             child: DisplayPage(),
           ),
-          SizedBox(),
+          SizedBox(
+            height: height,
+            child: StoragePage(),
+          ),
           SizedBox(),
           SizedBox(),
         ],
