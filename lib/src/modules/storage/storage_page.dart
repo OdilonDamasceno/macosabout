@@ -57,40 +57,46 @@ class StoragePage extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 10),
-                    ClipRRect(
+                    PhysicalModel(
+                      color: Colors.white,
+                      elevation: 1,
                       borderRadius: BorderRadius.circular(4),
-                      child: Stack(
-                        children: [
-                          Row(
-                            children: [
-                              Expanded(
-                                flex: double.tryParse(_controller.aval).toInt(),
-                                child: Container(
-                                  height: 20,
-                                  color: Color(0xff838384),
-                                ),
-                              ),
-                              Expanded(
-                                flex: 100 -
-                                    double.tryParse(_controller.aval).toInt(),
-                                child: Container(
-                                  height: 20,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xff474748),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(4),
+                        child: Stack(
+                          children: [
+                            Row(
+                              children: [
+                                Expanded(
+                                  flex:
+                                      double.tryParse(_controller.aval).toInt(),
+                                  child: Container(
+                                    height: 20,
+                                    color: Color(0xff838384),
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Positioned(
-                            left: 5,
-                            bottom: 3.5,
-                            child: Text(
-                              "System",
-                              style: TextStyle(fontSize: 11),
+                                Expanded(
+                                  flex: 100 -
+                                      double.tryParse(_controller.aval).toInt(),
+                                  child: Container(
+                                    height: 20,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xff474748),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
-                          ),
-                        ],
+                            Positioned(
+                              left: 5,
+                              bottom: 3.5,
+                              child: Text(
+                                "System",
+                                style: TextStyle(fontSize: 11),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
