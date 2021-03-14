@@ -36,7 +36,6 @@ class OverviewController {
       "cat",
       ["/sys/devices/virtual/dmi/id/board_name"],
     ).stdout.toString().replaceAll('\n', '');
-    // TODO AAAAAAAAAAAAAAAAAAAAAAAAAAAA
     this.startupDisk = io.Process.runSync(
       "grep",
       ["-w", "/", "/etc/fstab", "-B", "1"],
