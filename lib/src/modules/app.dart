@@ -13,6 +13,11 @@ class AboutMacApp extends StatelessWidget {
         colorScheme: ColorScheme.dark(
           background: Color(0xff333333),
         ),
+        textTheme: TextTheme(
+          bodyText2: TextStyle(
+            color: Color(0xffDFDFE0),
+          ),
+        ),
       ),
       themeMode: ThemeMode.dark,
       home: HomePage(),
