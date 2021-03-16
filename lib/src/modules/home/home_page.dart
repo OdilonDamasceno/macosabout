@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   HomeController _controller = HomeController();
   @override
   void initState() {
-    DesktopWindow.setMaxWindowSize(Size(600, 380)).then((value) => null);
+    DesktopWindow.setMaxWindowSize(Size(700, 500)).whenComplete(() => null);
     super.initState();
   }
 
