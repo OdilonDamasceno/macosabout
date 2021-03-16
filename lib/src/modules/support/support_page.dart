@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:macosabout/src/modules/widgets/row_text_button.dart';
+import 'package:macosabout/src/widgets/row_text_button.dart';
 
 class SupportPage extends StatelessWidget {
   @override

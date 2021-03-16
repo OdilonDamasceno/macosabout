@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:macosabout/src/modules/overview/overview_controller.dart';
-import 'package:macosabout/src/modules/widgets/button_mac.dart';
-import 'package:macosabout/src/modules/widgets/text_rich_mac.dart';
+import 'package:macosabout/src/widgets/button_mac.dart';
+import 'package:macosabout/src/widgets/text_rich_mac.dart';
 
 class OverviewPage extends StatelessWidget {
   final OverviewController _overviewController = OverviewController.init();

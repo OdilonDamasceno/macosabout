@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:macosabout/src/modules/storage/storage_controller.dart';
-import 'package:macosabout/src/modules/widgets/button_mac.dart';
+import 'package:macosabout/src/widgets/button_mac.dart';
 
 class StoragePage extends StatelessWidget {
   final StorageController _controller = StorageController.init();

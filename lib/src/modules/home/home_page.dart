@@ -5,7 +5,7 @@ import 'package:macosabout/src/modules/home/home_controller.dart';
 import 'package:macosabout/src/modules/overview/overview_page.dart';
 import 'package:macosabout/src/modules/storage/storage_page.dart';
 import 'package:macosabout/src/modules/support/support_page.dart';
-import 'package:macosabout/src/modules/widgets/button_mac.dart';
+import 'package:macosabout/src/widgets/button_mac.dart';
 import 'package:desktop_window/desktop_window.dart';
 
 class HomePage extends StatefulWidget {

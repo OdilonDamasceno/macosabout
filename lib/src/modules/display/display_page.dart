@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:macosabout/src/modules/display/display_controller.dart';
-import 'package:macosabout/src/modules/widgets/button_mac.dart';
+import 'package:macosabout/src/widgets/button_mac.dart';
 
 class DisplayPage extends StatelessWidget {
   final DisplayController _controller = DisplayController.init();
