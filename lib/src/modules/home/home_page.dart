@@ -6,7 +6,7 @@ import 'package:macosabout/src/modules/overview/overview_page.dart';
 import 'package:macosabout/src/modules/storage/storage_page.dart';
 import 'package:macosabout/src/modules/support/support_page.dart';
 import 'package:macosabout/src/widgets/button_mac.dart';
-import 'package:desktop_window/desktop_window.dart';
+import 'package:window_size/window_size.dart' as window;
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,7 +17,8 @@ class _HomePageState extends State<HomePage> {
   HomeController _controller = HomeController();
   @override
   void initState() {
-    DesktopWindow.setMaxWindowSize(Size(700, 500)).whenComplete(() => null);
+    window.setWindowMinSize(Size(600, 400));
+    window.setWindowMaxSize(Size(700, 500));
     super.initState();
   }
 
