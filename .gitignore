@@ -47,4 +47,4 @@ app.*.map.json
 /android/app/release
 
 # AppImage Binaries
-MacOSAbout-x86_64.AppImage
+*.AppImage
