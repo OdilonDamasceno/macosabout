@@ -18,3 +18,6 @@ run:
 install:
 	@sed "s?Exec=macosabout?Exec=${PWD}/macosabout-${APP_VERSION}-${MACHINE}.AppImage?g" assets/build_dependencies/MacOSAbout.desktop > /home/$$USER/.local/share/applications/MacOSAbout.desktop
 	@cp ${BUILD_DEPENDENCIES}/macosabout.png /home/$$USER/.icons/
+
+clean:
+	flutter clean
