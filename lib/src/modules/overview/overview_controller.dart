@@ -36,9 +36,15 @@ class OverviewController {
       "cat",
       ["/sys/devices/virtual/dmi/id/board_name"],
     ).stdout.toString().replaceAll('\n', '');
-    this.startupDisk = io.Process.runSync(
-      "grep",
-      ["-w", "/", "/etc/fstab", "-B", "1"],
-    ).stdout.toString().replaceAll("#", "").split("\n").first;
+    io.Process.runSync(
+      "df",
+      ["-h", "--output=target,source", "-H"],
+    ).stdout.toString().split("\n").forEach((line) {
+      if (line.contains(RegExp(r'^/\s'))) {
+        List _lineList = line.split(" ");
+        _lineList.removeWhere((element) => element.isEmpty);
+        this.startupDisk = _lineList[1];
+      }
+    });
   }
 }
