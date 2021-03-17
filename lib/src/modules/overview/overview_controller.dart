@@ -38,7 +38,7 @@ class OverviewController {
     ).stdout.toString().replaceAll('\n', '');
     io.Process.runSync(
       "df",
-      ["-h", "--output=target,source", "-H"],
+      ["/", "-h", "--output=target,source", "-H"],
     ).stdout.toString().split("\n").forEach((line) {
       if (line.contains(RegExp(r'^/\s'))) {
         List _lineList = line.split(" ");

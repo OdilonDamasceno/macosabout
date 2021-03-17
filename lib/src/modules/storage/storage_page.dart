@@ -21,7 +21,6 @@ class StoragePage extends StatelessWidget {
                     Image.asset("assets/images/disk.png", scale: 4),
                     Text.rich(
                       TextSpan(text: "${_controller.size} GB\n", children: [
-                        // TODO Verify if is SSD
                         TextSpan(text: "SATA Disk"),
                       ]),
                       textAlign: TextAlign.center,
@@ -46,7 +45,7 @@ class StoragePage extends StatelessWidget {
                             children: [
                               TextSpan(
                                 text:
-                                    "${_controller.used} GB available of ${_controller.size} GB",
+                                    "${100 - double.tryParse(_controller.aval).toInt()} GB available of ${_controller.size} GB",
                                 style: TextStyle(fontSize: 11),
                               ),
                             ],

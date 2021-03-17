@@ -8,7 +8,7 @@ class StorageController {
   StorageController.init() {
     io.Process.runSync(
       "df",
-      ["-h", "--output=target,size,used,pcent,source", "-H"],
+      ["/", "-h", "--output=target,size,used,pcent,source", "-H"],
     ).stdout.toString().split("\n").forEach((line) {
       if (line.contains(RegExp(r'^/\s'))) {
         List _lineList = line.split(" ");
