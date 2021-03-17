@@ -6,22 +6,9 @@ import 'package:macosabout/src/modules/overview/overview_page.dart';
 import 'package:macosabout/src/modules/storage/storage_page.dart';
 import 'package:macosabout/src/modules/support/support_page.dart';
 import 'package:macosabout/src/widgets/button_mac.dart';
-import 'package:window_size/window_size.dart' as window;
 
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  HomeController _controller = HomeController();
-  @override
-  void initState() {
-    window.setWindowMinSize(Size(600, 400));
-    window.setWindowMaxSize(Size(700, 500));
-    super.initState();
-  }
-
+class HomePage extends StatelessWidget {
+  final HomeController _controller = HomeController();
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
