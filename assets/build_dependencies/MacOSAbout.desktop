@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name=MacOSAbout
+Exec=macosabout %u
+Icon=macosabout
+Comment=Desktop system information tool like MacOS Catalina
+Categories=Utility;
