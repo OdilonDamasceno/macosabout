@@ -19,10 +19,16 @@ class SupportPage extends StatelessWidget {
                 ),
               ),
               Expanded(
-                child: Container(
+                child: SizedBox(
                   height: 100,
                   width: 100,
-                  color: Colors.black,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Image.asset(
+                      "assets/images/logo_app.png",
+                      filterQuality: FilterQuality.high,
+                    ),
+                  ),
                 ),
               ),
               Expanded(
@@ -54,10 +60,13 @@ class SupportPage extends StatelessWidget {
                 ),
               ),
               Expanded(
-                child: Container(
+                child: SizedBox(
                   height: 100,
                   width: 100,
-                  color: Colors.black,
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Image.asset("assets/images/macpc.png"),
+                  ),
                 ),
               ),
               Expanded(
