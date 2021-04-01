@@ -50,7 +50,14 @@ class HomePage extends StatelessWidget {
         preferredSize: Size(width, 40),
         child: Container(
           decoration: BoxDecoration(
-            color: Theme.of(context).backgroundColor,
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color(0xff424242),
+                Color(0xff363637),
+              ],
+            ),
             border: Border(
               bottom: BorderSide(color: Color(0xff0f0f0f), width: 1.3),
             ),
