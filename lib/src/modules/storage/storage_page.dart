@@ -1,9 +1,23 @@
+import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
 import 'package:macosabout/src/modules/storage/storage_controller.dart';
 import 'package:macosabout/src/widgets/button_mac.dart';
 
-class StoragePage extends StatelessWidget {
+class StoragePage extends StatefulWidget {
+  @override
+  _StoragePageState createState() => _StoragePageState();
+}
+
+class _StoragePageState extends State<StoragePage> {
   final StorageController _controller = StorageController.init();
+
+  @override
+  void initState() {
+    DesktopWindow.setWindowSize(Size(590, 250));
+
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(

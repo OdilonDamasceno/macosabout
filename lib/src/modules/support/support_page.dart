@@ -1,7 +1,20 @@
+import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
 import 'package:macosabout/src/widgets/row_text_button.dart';
 
-class SupportPage extends StatelessWidget {
+class SupportPage extends StatefulWidget {
+  @override
+  _SupportPageState createState() => _SupportPageState();
+}
+
+class _SupportPageState extends State<SupportPage> {
+  @override
+  void initState() {
+    DesktopWindow.setWindowSize(Size(590, 350));
+
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(

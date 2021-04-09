@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:macosabout/src/modules/display/display_page.dart';
 import 'package:macosabout/src/modules/home/home_controller.dart';
 import 'package:macosabout/src/modules/overview/overview_page.dart';
+import 'package:macosabout/src/modules/service/service_page.dart';
 import 'package:macosabout/src/modules/storage/storage_page.dart';
 import 'package:macosabout/src/modules/support/support_page.dart';
 import 'package:macosabout/src/widgets/button_mac.dart';
@@ -91,7 +92,10 @@ class HomePage extends StatelessWidget {
             height: height,
             child: SupportPage(),
           ),
-          SizedBox(),
+          SizedBox(
+            height: height,
+            child: ServicePage(),
+          ),
         ],
       ),
     );
