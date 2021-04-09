@@ -1,10 +1,21 @@
+import 'package:desktop_window/desktop_window.dart';
 import 'package:flutter/material.dart';
 import 'package:macosabout/src/modules/overview/overview_controller.dart';
 import 'package:macosabout/src/widgets/button_mac.dart';
 import 'package:macosabout/src/widgets/text_rich_mac.dart';
 
-class OverviewPage extends StatelessWidget {
+class OverviewPage extends StatefulWidget {
+  @override
+  _OverviewPageState createState() => _OverviewPageState();
+}
+
+class _OverviewPageState extends State<OverviewPage> {
   final OverviewController _overviewController = OverviewController.init();
+  void initState() {
+    DesktopWindow.setWindowSize(Size(590, 420));
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
