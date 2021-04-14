@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-<img src="assets/screenshots/overview.png" alt="overview" width="300"/> <img src="assets/screenshots/display.png" alt="display" width="300"/> <img src="assets/screenshots/storage.png" alt="storage" width="300"/> <img src="assets/screenshots/service.png" alt="service" width="300"/>
+<img src="assets/screenshots/overview.png" alt="overview" width="300"/> <img src="assets/screenshots/display.png" alt="display" width="300"/> <img src="assets/screenshots/storage.png" alt="storage" width="300"/> <img src="assets/screenshots/support.png" alt="support" width="300"/> <img src="assets/screenshots/service.png" alt="service" width="300"/>
 
 ## Usage example
 
